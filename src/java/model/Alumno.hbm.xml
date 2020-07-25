@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/07/2020 07:05:53 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Alumno" table="alumno" catalog="matricula" optimistic-lock="version">
+        <id name="idAlumno" type="int">
+            <column name="idAlumno" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="45" not-null="true" />
+        </property>
+        <property name="apellido" type="string">
+            <column name="apellido" length="45" not-null="true" />
+        </property>
+        <property name="ciclo" type="string">
+            <column name="ciclo" length="45" not-null="true" />
+        </property>
+        <property name="carrera" type="string">
+            <column name="carrera" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
